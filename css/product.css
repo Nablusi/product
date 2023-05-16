@@ -1,0 +1,415 @@
+/* gloval value starts */
+body{
+    font-family: 'Cairo', sans-serif;
+    direction: rtl;
+    overflow-x:hidden;
+    scroll-behavior: smooth;
+}
+
+:root{
+    --imgBtnColor:#8239C2;
+    --textColor:white;
+    --textHeaderColor:#555555;
+}
+
+
+
+@media (max-width:576px){
+    nav .container .card .card-body{
+        margin-top:30px !important;
+    }
+    nav .container .card .imges .img2{
+        top: -60px !important;
+        right: 201px !important;
+    }
+    
+    nav .container .card .imges .label::after{
+        content: "2000";
+        position: absolute;
+        top: -36px !important;
+        right: 259px !important;
+        color: var(--textColor);
+        font-size: 20px;
+    }
+    nav .container .card .imges .label::before{
+        content: "ريال";
+        position: absolute;
+        top: -9px !important;
+        right: 263px !important;
+        color: var(--textColor);
+        font-size: 20px;
+        z-index: 1;
+    }
+    .main .container .card-body,
+    .main .container .card img{
+        margin-right:0 !important;
+    }
+}
+
+@media (max-width:1200px){
+    nav .container .card{
+        justify-content: center;
+    }
+    .price-list .container .card-hover{
+        height:435px !important;
+    }
+}
+@media (max-width:992px){
+    .main .container .card{
+        text-align: center;
+    }
+    .main .container .card-body p{
+        margin-bottom:45px;
+    }
+    .main .container .card-body,
+    .main .container .card img{
+        margin-right:0 !important;
+    }
+    .price-list .container .card-hover{
+        height:435px !important;
+    }
+}
+@media (min-width:1200px){
+    .video video{
+        height:170% !important;
+    }
+}
+
+@media (max-width:767px){
+    .price-list .container .card{
+        margin:70px auto !important;
+    }
+}
+
+/* gloval value ends */
+/* nav starts */
+nav {
+    overflow: hidden;
+}
+
+
+
+
+nav .logo{
+    padding-top:40px;
+    margin-bottom: 50px;
+    margin-right: 50px;
+}
+
+nav .container{
+    padding-bottom: 25px;
+} 
+
+nav .container .card{
+    background-color: transparent;
+}
+
+nav .container .card .card-body{
+    margin-top:140px;
+    width:600px;
+    direction: rtl;
+}
+
+nav .container .card .card-body p{
+    margin: 50px 0;
+}
+
+nav .container .card .card-body .card-footer{
+    background-color: transparent;
+    border: none;
+}
+nav .container .card .card-body .card-footer button.active{
+    background-color: var(--imgBtnColor);
+    color:var(--textColor);
+}
+
+nav .container .card .card-body .card-footer button{
+    background-color: transparent;
+    color:var(--imgBtnColor);
+    width:230px;
+    height: 65px;
+}
+
+nav .container .card .card-body .card-footer button:hover{
+    background-color: var(--imgBtnColor);
+    color:var(--textColor);
+}
+
+nav .container .card .imges .img2{
+    top: -60px;
+    right: -80px;
+}
+
+nav .container .card .imges .label::after{
+    content: "2000";
+    position: absolute;
+    top: -36px;
+    right: -19px;
+    color: var(--textColor);
+    font-size: 20px;
+}
+nav .container .card .imges .label::before{
+    content: "ريال";
+    position: absolute;
+    top: -9px;
+    right: -15px;
+    color: var(--textColor);
+    font-size: 20px;
+    z-index: 1;
+}
+
+nav video{
+    position: absolute;
+    z-index: -1;
+    top: 0;
+    object-fit: cover;
+    height: 100%;
+}
+
+/* nav ends*/
+
+
+.main .container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.main .container h2{
+    color:var(--textHeaderColor);
+    padding-top: 75px;
+    font-size:30px;
+    position: relative;
+    margin-bottom: 130px;
+}
+.main .container h2::after{
+    content:"";
+    background-color: var(--imgBtnColor);
+    width:140px;
+    height: 2px;
+    position: absolute;
+    bottom: -40px;
+    left: 20px;
+}
+
+.main .container .card{
+    border:none;
+}
+.main .container .card img{
+    margin-bottom:65px;
+    margin-top:65px;
+    margin-right: 100px
+}
+.main .container .card-body{
+    margin-right:170px;
+}
+
+.main .container .card-body h5{
+    margin-top:45px;
+    color:var(--imgBtnColor);
+    border-right:var(--imgBtnColor) 2px solid;
+    padding-right:25px;
+    margin-bottom: 50px;
+    font-size: 35px;
+}
+.main .container .card-body h5.active{
+    margin-top:45px;
+    color:var(--imgBtnColor);
+    border:none;
+    border-left:var(--imgBtnColor) 2px solid;
+    padding-left:25px;
+    margin-bottom: 50px;
+    font-size: 35px;
+    
+}
+
+
+
+/* price list starts */
+    .price-list{
+        background-color:#F7F7F7;
+    }
+    .price-list .container h2{
+        padding-top:50px;
+        color:var(--textHeaderColor);
+        font-size:30px;
+        margin-bottom: 115px;
+        text-align: center;
+    }
+    .price-list .container .card{
+        margin-bottom: 110px;
+        width:265px;
+    }
+    .price-list .container .card .card-price{
+        color:var(--imgBtnColor);
+        margin-top:17px;
+        margin-bottom:34px;
+        font-size: 20px;
+    }
+    .price-list .container .card sub{
+        font-size:15px;
+    }
+    .price-list .container .card button{
+        background-color: transparent;
+        color:var(--imgBtnColor);
+        border:2px var(--imgBtnColor) solid;
+        width:170px;
+    }
+    .price-list .container .card button.active{
+        background-color: var(--imgBtnColor);
+        color:white;
+    }
+    .price-list .container .card button:hover{
+        background-color: var(--imgBtnColor);
+        color:white;
+    }
+    .price-list .container .card:hover{
+        transform: scale(1.1);
+        transition: 0.3s ease;
+}
+
+
+    .price-list .container .card.active{
+        transform: scale(1.1);
+}
+.price-list .container .card .add-hover{
+    display: none;
+}
+.price-list .container .card .add-hover.active{
+    display: block;
+}
+/* price list ends */
+
+/* question starts */
+
+.questions{
+    background-color: #ffffff;
+    padding-bottom: 65px;
+}
+.questions .container h2{
+    padding-top:60px;
+    margin-bottom: 60px;
+    color:var(--textHeaderColor);
+    text-align: center;
+}
+.questions .container .accordion-container{
+    gap:30px;
+    justify-content: center;
+}
+.questions .container .accordion-container .accordion{
+    margin-bottom:30px;
+}
+/* question ends */
+
+/* video starts */
+.video{
+    position: relative;
+    height: 500px;
+    overflow: hidden;
+    
+}
+.video .container-fluid .background-video{
+    width:100%;
+    height: 100%;
+    background-color: #8239c2d6;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    position: absolute;
+    transition: 0.3s ease;
+    z-index: 1;
+}
+.video .container-fluid .background-video button{
+    color:white;
+    border:white 2px solid;
+    width:150px;
+    height: 150px;
+}
+.video .container-fluid .background-video h2{
+    color:white;
+}
+.video video{
+    top: 0;
+    left: 0;
+    object-fit: cover;
+    height: 100%;
+}
+/* video ends */
+/* footer starts */
+    .footer{
+        background-color: #131313;
+        padding-bottom: 50px;
+    }
+    .footer .container .card-container{
+        padding-top:60px;
+        gap:30px;
+    }
+    .footer .container .card-container .card{
+        background-color: transparent;
+    }
+    .footer .container .card-container .card .card-item{
+        background-color: transparent;
+    }
+    .footer .container .card-container .card .card-item h2{
+        margin-bottom:25px;
+    }
+    .footer .container .card-container .card .card-item input,
+    .footer .container .card-container .card .card-item textarea
+    {
+        background-color: #242424;
+        height: 50px;
+        margin-bottom: 5px;
+        border:none;
+        padding-right: 20px;
+    }
+    
+    .footer .container .card-container .card .card-item .btn{
+        color:white;
+        background-color: var(--imgBtnColor);
+    }
+
+    .footer .container .card-products h2{
+        margin-bottom: 25px;
+    }
+
+    .footer .container .card-products h3,
+    .footer .container .card-products p
+    {
+        padding-right:20px;
+
+    }
+    .footer .container .card-products img{
+        margin-bottom:25px;
+    }
+
+
+/* footer ends */
+/* social media starts */
+.footer-bottom{
+    background-color: #252525;
+    padding-top:35px;
+    padding-bottom: 35px;
+}
+.footer-bottom .container .social-media a{
+    background-color:#768594;
+}
+.footer-bottom .container .social-media .facebook:hover{
+    background-color:#1877F2;
+    color:white;
+}
+.footer-bottom .container .social-media .telegeam:hover{
+    background-color:#33A8E4;
+    color:white;
+}
+.footer-bottom .container .social-media .tiktok:hover{
+    background-color:#000000;
+    color:white;
+}
+.footer-bottom .container .social-media .twitter:hover{
+    background-color:#1DA1F2;
+    color:white;
+}
+
+/* social media ends */
